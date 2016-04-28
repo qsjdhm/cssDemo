@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>float流特征布局</title>
+	<style>
+		html {
+			overflow: hidden;
+		}
+		body {
+			margin: 0;
+		}
+		.flow-box {
+			width: 500px; background-color: #eee; overflow:auto; resize:horizontal;
+		}
+		.flow-content {
+			margin-left: 150px; padding: 10px 0;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="flow-box">
+		<img style="float: left;width:128px;height:96px;" src="i/mm1.jpg" />
+		<div class="flow-content" class="flow-content">
+			<img src="i/mm1.jpg" style="width: 100%;height:50px;" />
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+
+	</script>
+</body>
+</html>

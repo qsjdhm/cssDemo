@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BFC块级格式化上下文特征布局</title>
+	<style>
+		html {
+			overflow: hidden;
+		}
+		body {
+			margin: 0;
+		}
+		.flow-box {
+			width: 500px;
+			background-color: #eee;
+			overflow:auto;
+			resize:horizontal;
+		}
+		.flow-box img {
+			float:left;
+			width:128px;
+			height:96px;
+			margin-right: 20px;
+		}
+		.flow-content {
+			padding: 10px 0;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<!-- 随便改动img的width，来看flow-content内容宽度的自适应 -->
+	<div class="flow-box">
+		<img src="i/mm1.jpg" />
+		<div class="flow-content">
+			低版本IE浏览器有个hasLayout的概念，不过这玩意太老生常谈，而且也过时了，我现在无力再吐槽。总而言之，言而总之，就特性表现而言，很多时候和BFC这个概念很像。
+			低版本IE浏览器有个hasLayout的概念，不过这玩意太老生常谈，而且也过时了，我现在无力再吐槽。总而言之，言而总之，就特性表现而言，很多时候和BFC这个概念很像。
+		</div>
+	</div>
+</body>
+</html>
